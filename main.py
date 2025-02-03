@@ -47,8 +47,8 @@ def extract_max_num_from_dataset(dataset_name):
 os.environ["HF_TOKEN"] = "{yourhftoken}"
 
 
-os.environ["WANDB_API_KEY"] = '{yourwandbkey}'
-wandb.login()
+# os.environ["WANDB_API_KEY"] = '{yourwandbkey}'
+# wandb.login()
 
 # Helper function to convert a list of strings to floats, including fractions
 def parse_period_base_list(period_base_list):
