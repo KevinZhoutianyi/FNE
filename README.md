@@ -14,3 +14,6 @@ This repository provides an implementation of **Fourier Number Embedding (FNE)**
 </p>
 
 On 6-digit decimal addition, FNE requires 64x less data to achieve 99\% accuracy than subword and digit-wise embeddings while using 3x and 6x fewer tokens per number, respectively. Furthermore, FNE is the only method that yields 100% accuracy on over 100,000 test examples for addition, subtraction, and multiplication.
+
+
+For a visualization of our method, please refer to [this website](https://fouriernumber.github.io/).
