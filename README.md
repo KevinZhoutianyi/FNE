@@ -1,19 +1,92 @@
-# FNE: Precise Single-Token Number Embeddings via Fourier Features
+# Fourier Number Embedding (FNE)
 
-This repository provides an implementation of **Fourier Number Embedding (FNE)** a novel method that directly maps numbers into the embedding space with their Fourier features. FNE encodes each number as a single token with only two embedding dimensions per digit, effectively capturing numerical values without fragmentation.
+[![Arxiv](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/your-paper-id)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/KevinZhoutianyi/FNE)
+[![Website](https://img.shields.io/badge/Website-FNE-blue)](https://fouriernumber.github.io/)
 
-<br>
+📌 **FNE: Precise Single-Token Number Embeddings via Fourier Features**
+🔢 Efficient and accurate numerical representation for **Large Language Models (LLMs)**.
 
-<img src="https://github.com/KevinZhoutianyi/FNE/blob/master/imgs/teaser.jpg" alt="FNE">
+---
 
-<p style="font-size: 12px; text-align: center;">
-    (a) We extract all the numbers from the input sequence.  
-    (b) For each number, we use FNE to directly map the number to its embedding. The first two entries in the embedding represent 18 mod 10, while the next two entries represent 18 mod 100.  
-    (c) We pad the FNE with zeros, add it to the word embeddings, and then feed the combined embeddings into the model.  
-    (d) For each digit, we take every two entries from the last hidden state and find the number whose representation is closest to these two entries.
-</p>
+## 🔥 Why Fourier Number Embedding (FNE)?
 
-On 6-digit decimal addition, FNE requires 64x less data to achieve 99\% accuracy than subword and digit-wise embeddings while using 3x and 6x fewer tokens per number, respectively. Furthermore, FNE is the only method that yields 100% accuracy on over 100,000 test examples for addition, subtraction, and multiplication.
+### 🚀 **Solving Tokenization Limitations in LLMs**
 
+Traditional LLMs tokenize numbers inefficiently, leading to:
 
-For a visualization of our method, please refer to [this website](https://fouriernumber.github.io/).
+- Multiple tokens per number (e.g., `"12345.6789"` → **5 tokens in GPT-4, 10 in LLaMA2**).
+- Loss of precision, impacting **arithmetic and numerical reasoning**.
+
+FNE directly maps numbers to their **Fourier representations**, making:
+✅ **Arithmetic more efficient**
+✅ **Number embeddings precise & continuous**
+✅ **Data efficiency drastically improved**
+
+🔗 **[Read the full details on our website](https://kevinzhoutianyi.github.io/FNE_website/)**
+
+---
+
+## 📈 Key Benefits of FNE
+
+- ✅ **Single-token number embeddings**
+- ✅ **Improves accuracy on arithmetic tasks**
+- ✅ **Reduces training data needs by up to 64×**
+- ✅ **Works for any numeric data, including decimals & large numbers**
+
+### 🎯 **Example: Tokenization Comparison**
+
+| Tokenizer                                 | Tokenized Representation | Tokens Used    |
+| ----------------------------------------- | ------------------------ | -------------- |
+| **GPT-4, LLaMA3.2 (BPE)**           | `123 45 . 678 9`       | **5**    |
+| **LLaMA2 (Digitwise Tokenization)** | `1 2 3 4 5 . 6 7 8 9`  | **10**   |
+| **FNE (Ours)**                      | `12345.6789`           | **1** ✅ |
+
+---
+
+## 📊 Empirical Results
+
+### **📌 Accuracy Trends on Arithmetic Tasks**
+
+FNE achieves **99%+ accuracy with 64× less data** compared to baseline models.
+
+📌 **Performance Highlights:**
+✅ **100% accuracy on 6-digit integer addition**
+✅ **98.4% accuracy on 50-digit integer addition**
+✅ **Significant gains in subtraction & multiplication tasks**
+
+![Model Accuracy](./imgs/adddecimaldataacc (1).png)
+
+---
+
+## 🔧 How Does FNE Work?
+
+### **Step 4: Decode using similarity**
+
+LLM hidden states are used to predict numbers with perfect accuracy.
+
+🔗 **[Read more about the methodology here]( ---  ## ✉️ Contact For discussions, collaborations, or research inquiries, feel free to reach out:   📧 **Email:** [tzhou029@usc.edu](mailto:tzhou029@usc.edu)      🚀 **If you find this useful, don't forget to ⭐️ the repo!** 🚀)**.
+
+## 📖 Citation
+
+If you find this project useful, please cite our work:
+
+```bibtex
+@article{zhou2024fne,
+  title={FNE: Precise Single-Token Number Embeddings via Fourier Features},
+  author={Tianyi Zhou, Deqing Fu, Mahdi Soltanolkotabi, Robin Jia, Vatsal Sharan},
+  journal={arXiv preprint arXiv:???},
+  year={2025},
+  url={???}
+}
+```
+
+---
+
+## ✉️ Contact
+
+For discussions, collaborations, or research inquiries, feel free to reach out:
+📧 **Email:** [tzhou029@usc.edu](mailto:tzhou029@usc.edu)
+
+🚀 **If you find this useful, don't forget to ⭐️ the repo!** 🚀
+-------------------------------------------------------------
