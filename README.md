@@ -4,10 +4,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/KevinZhoutianyi/FNE)
 [![Website](https://img.shields.io/badge/Website-FNE-blue)](https://fouriernumber.github.io/)
 
-📌 **FNE: Precise Single-Token Number Embeddings via Fourier Features**
-
-
-🔢 Efficient and accurate numerical representation for **Large Language Models (LLMs)**.
+📌 **FNE: Precise Single-Token Number Embeddings via Fourier Features
+🔢 Efficient and accurate numerical representation for **Large Language Models (LLMs)**.**
 
 ---
 
@@ -22,12 +20,9 @@ Traditional LLMs tokenize numbers inefficiently, leading to:
 
 FNE directly maps numbers to their **Fourier representations**, making:
 
-✅ **Arithmetic more efficient**
-
-
-**✅ **Number embeddings precise & continuous****
-
-✅ **Data efficiency drastically improved**
+* ✅ **Running time more efficient**
+* ✅ **Number embeddings precise**
+* ✅ **Data efficiency improved**
 
 🔗 **[Read the full details on our website](https://kevinzhoutianyi.github.io/FNE_website/)**
 
