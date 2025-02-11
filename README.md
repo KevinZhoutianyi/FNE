@@ -5,6 +5,8 @@
 [![Website](https://img.shields.io/badge/Website-FNE-blue)](https://fouriernumber.github.io/)
 
 📌 **FNE: Precise Single-Token Number Embeddings via Fourier Features**
+
+
 🔢 Efficient and accurate numerical representation for **Large Language Models (LLMs)**.
 
 ---
@@ -19,8 +21,12 @@ Traditional LLMs tokenize numbers inefficiently, leading to:
 - Loss of precision, impacting **arithmetic and numerical reasoning**.
 
 FNE directly maps numbers to their **Fourier representations**, making:
+
 ✅ **Arithmetic more efficient**
-✅ **Number embeddings precise & continuous**
+
+
+**✅ **Number embeddings precise & continuous****
+
 ✅ **Data efficiency drastically improved**
 
 🔗 **[Read the full details on our website](https://kevinzhoutianyi.github.io/FNE_website/)**
@@ -55,17 +61,14 @@ FNE achieves **99%+ accuracy with 64× less data** compared to baseline models.
 ✅ **98.4% accuracy on 50-digit integer addition**
 ✅ **Significant gains in subtraction & multiplication tasks**
 
-![Model Accuracy](./imgs/adddecimaldataacc (1).png)
+![accuracy](./imgs/data_comparison.png)
 
 ---
 
 ## 🔧 How Does FNE Work?
 
-### **Step 4: Decode using similarity**
+![method](./imgs/teaser.jpg)
 
-LLM hidden states are used to predict numbers with perfect accuracy.
-
-🔗 **[Read more about the methodology here]( ---  ## ✉️ Contact For discussions, collaborations, or research inquiries, feel free to reach out:   📧 **Email:** [tzhou029@usc.edu](mailto:tzhou029@usc.edu)      🚀 **If you find this useful, don't forget to ⭐️ the repo!** 🚀)**.
 
 ## 📖 Citation
 
@@ -85,7 +88,7 @@ If you find this project useful, please cite our work:
 
 ## ✉️ Contact
 
-For discussions, collaborations, or research inquiries, feel free to reach out:
+If you would like to discuss applying **Fourier Number Embedding (FNE)** to quantization, data analysis, time series, or others—or explore adding new features to FNE, feel free to connect!
 📧 **Email:** [tzhou029@usc.edu](mailto:tzhou029@usc.edu)
 
 🚀 **If you find this useful, don't forget to ⭐️ the repo!** 🚀
