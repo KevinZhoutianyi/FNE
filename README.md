@@ -1,15 +1,15 @@
-# Fourier Number Embedding (FNE)
+# Fourier Number Embedding (FoNE)
 
 [![Arxiv](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/your-paper-id)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)](https://github.com/KevinZhoutianyi/FNE)
 [![Website](https://img.shields.io/badge/Website-FNE-blue)](https://fouriernumber.github.io/)
 
-📌 **FNE: Precise Single-Token Number Embeddings via Fourier Features
+📌 **FoNE: Precise Single-Token Number Embeddings via Fourier Features
 🔢 Efficient and accurate numerical representation for **Large Language Models (LLMs)**.**
 
 ---
 
-## 🔥 Why Fourier Number Embedding (FNE)?
+## 🔥 Why Fourier Number Embedding (FoNE)?
 
 ### 🚀 **Solving Tokenization Limitations in LLMs**
 
@@ -18,7 +18,7 @@ Traditional LLMs tokenize numbers inefficiently, leading to:
 - Multiple tokens per number (e.g., `"12345.6789"` → **5 tokens in GPT-4, 10 in LLaMA2**).
 - Loss of precision, impacting **arithmetic and numerical reasoning**.
 
-FNE directly maps numbers to their **Fourier representations**, making:
+FoNE directly maps numbers to their **Fourier representations**, making:
 
 * ✅ **Running time more efficient**
 * ✅ **Number embeddings precise**
@@ -28,7 +28,7 @@ FNE directly maps numbers to their **Fourier representations**, making:
 
 ---
 
-## 📈 Key Benefits of FNE
+## 📈 Key Benefits of FoNE
 
 - ✅ **Single-token number embeddings**
 - ✅ **Improves accuracy on arithmetic tasks**
@@ -41,7 +41,7 @@ FNE directly maps numbers to their **Fourier representations**, making:
 | ----------------------------------------- | ------------------------ | -------------- |
 | **GPT-4, LLaMA3.2 (BPE)**           | `123 45 . 678 9`       | **5**    |
 | **LLaMA2 (Digitwise Tokenization)** | `1 2 3 4 5 . 6 7 8 9`  | **10**   |
-| **FNE (Ours)**                      | `12345.6789`           | **1** ✅ |
+| **FoNE (Ours)**                     | `12345.6789`           | **1** ✅ |
 
 ---
 
@@ -49,7 +49,7 @@ FNE directly maps numbers to their **Fourier representations**, making:
 
 ### **📌 Accuracy Trends on Arithmetic Tasks**
 
-FNE achieves **99%+ accuracy with 64× less data** compared to baseline models.
+FoNE achieves **99%+ accuracy with 64× less data** compared to baseline models.
 
 📌 **Performance Highlights:**
 ✅ **100% accuracy on 6-digit integer addition**
@@ -60,17 +60,16 @@ FNE achieves **99%+ accuracy with 64× less data** compared to baseline models.
 
 ---
 
-## 🔧 How Does FNE Work?
+## 🔧 How Does FoNE Work?
 
 ![method](./imgs/teaser.jpg)
-
 
 ## 📖 Citation
 
 If you find this project useful, please cite our work:
 
 ```bibtex
-@article{zhou2024fne,
+@article{zhou2024fone,
   title={FNE: Precise Single-Token Number Embeddings via Fourier Features},
   author={Tianyi Zhou, Deqing Fu, Mahdi Soltanolkotabi, Robin Jia, Vatsal Sharan},
   journal={arXiv preprint arXiv:???},
@@ -83,7 +82,7 @@ If you find this project useful, please cite our work:
 
 ## ✉️ Contact
 
-If you would like to discuss applying **Fourier Number Embedding (FNE)** to quantization, data analysis, time series, or others—or explore adding new features to FNE, feel free to connect!
+If you would like to discuss applying **Fourier Number Embedding (FoNE)** to quantization, data analysis, time series, or others—or explore adding new features to FNE, feel free to connect!
 📧 **Email:** [tzhou029@usc.edu](mailto:tzhou029@usc.edu)
 
 🚀 **If you find this useful, don't forget to ⭐️ the repo!** 🚀
